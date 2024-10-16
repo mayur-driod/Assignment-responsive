@@ -104,6 +104,8 @@ nav ul li{
     display: flex;
     align-items: center;
 }
+
+
 .middle{
     background-color: rgb(20,20,20);
 }
@@ -111,6 +113,101 @@ nav ul li{
     display: flex;
     justify-content: space-evenly;
 }
+
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    *{
+        box-sizing: auto;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section {
+      height: 80vh; 
+      width: 90%; 
+    }
+  
+    
+    .title .name {
+      font-size: 4rem; 
+    }
+  
+    
+    .logo {
+      margin: 2%; 
+    }
+    .menu li {
+      margin: 1.5%; 
+    }
+    .play-btn {
+      margin: 2% 2%; 
+    }
+    .info-btn {
+      margin: 2% 2%; 
+    }
+    .images img {
+      width: 40%; 
+      margin: 2% 2%; 
+    }
+    .topTen .images img {
+      width: 30%; 
+      height: 20vh; 
+    }
+    .foot-bottom img {
+      margin: 2% 2%; 
+    }
+    .socials img {
+      margin: 1.5%; 
+    }
+    .artists ul li {
+      margin: 1.5% 1.5%; 
+    }
+    .highlight {
+      padding: 1.5% 1.5%; 
+    }
+    .copyright {
+      margin: 1.5% 1.5%; 
+    }
+  }
+  
+  /* Media query for screens with a maximum width of 400px */
+  @media (max-width: 400px) {
+   
+    section {
+      height: 70vh; 
+    }
+    .title .name {
+      font-size: 3rem; 
+    }
+    .images img {
+      width: 30%; 
+    }
+    .topTen .images img {
+      width: 20%; 
+    }
+  }
+  
+  /* Media query for screens with a maximum width of 300px */
+  @media (max-width: 300px) {
+
+    section {
+      height: 50vh;
+    }
+    .title .name {
+      font-size: 2rem; 
+    }
+    .images img {
+      width: 20%; 
+    }
+    .topTen .images img {
+      width: 15%; 
+    }
+  }
 .images img{
     width: 210px;
     margin-left: 20px;
